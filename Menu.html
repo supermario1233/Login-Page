@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JayBar - Menu</title>
+    <link rel="icon" href="logoo.png">
+    <style>
+        body {
+            background-image: url('bgimg.jpg');
+            opacity: 1.0;
+        
+        header {
+        text-align: center;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+        }
+		
+				.shopping-cart{
+		float:right; 
+		margin-right:20px;
+		}
+        
+         footer {
+            background-color: gray; 
+            color: white; 
+            padding: 20px;
+            text-align: center;
+			margin: -8px;
+        }
+
+        footer p {
+            margin: 5px 0;
+        }
+        
+        main {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: 20px;
+       }
+        
+        .drink-box {
+            padding: 10px;
+            margin: 20px;
+            border: 2px solid #333;
+            border-radius: 10px;
+            text-align: center;
+            background-color:green;
+			width: 300px;
+			height:400px;
+        }
+		
+		.drink-container {
+         display: flex;
+         flex-wrap: wrap;
+         justify-content: center;
+		 margin-top: 70px;
+        }
+		
+        .drink-content {
+         display: flex;
+         flex-direction: column;
+         align-items: center;
+         text-align: center;
+         }
+
+        
+        .drink-box img {
+            width: 270px;
+            height: 200px;
+            border-radius: 10px;
+        }
+	
+        .drink-box h2 {
+		color: white;
+		}
+
+		
+        .drink-box h3 {
+            margin: 10px 0;
+            font-size: 27px;
+			color: white;
+        }
+		
+        .drink-box p {
+		color: white;
+		font-size:18px;
+		}
+		
+		
+         .cashier {
+		    height: 650px;
+            width: 570px;
+            border: 1px solid black;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px auto;
+			background-color: green;
+			
+        }
+        .item {
+            margin-bottom: 15px;
+			
+        }
+		
+		.cashier h2{
+		color: white;
+		}
+		
+		.cashier label{
+		color: white;
+		}
+		
+		.item input{
+		height: 20px;
+		}
+		
+        button {
+            justify-content: center;
+			padding: 10px 30px;
+            background-color:#4CAF50;
+            color: white;
+            border: 1px solid black;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color:#45a0493;
+        }
+
+		
+    </style>
+	
+	
+</head>
+
+<body>
+   <header>
+	 <nav>
+					<ul>
+					<li><a href="Home.html" style="float: left; margin-left:20px;">HOME</a></li>   
+					<li><a href="Menu.html" style="float: left; margin-left:20px;">MENU</a></li>                      
+					<li><a href="About.html" style="float: left; margin-left:20px;">ABOUT US</a></li>
+					<li><a href="Contacts.html" style="float:left; margin-left:20px;">CONTACT</a></li>
+					
+					<li><a href="Sign-out.html" style="float: right; margin-right:20px;">SIGN-OUT</a></li>
+					</ul>
+				</nav>	 
+</header>
+    <main class="drink-container">
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="cosmo.jpg" alt="Cosmopolitan">
+            <div class="drink-info">
+                <h3>Cosmopolitan</h3>
+               <p> A classic cocktail made with vodka, triple sec, cranberry juice, and freshly squeezed lime juice.</p>
+				<p><h2>Php.150</h2></p>
+            </div>
+        </div>
+    </div>
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="negroni.jpg" alt="Negroni">
+            <div class="drink-info">
+                <h3>Negroni</h3>
+				 <p>A popular Italian cocktail made with gin, vermouth rosso, and Campari, garnished with an orange peel.</p>
+                <p><h2>Php.125</h2></p>
+            </div>
+        </div>
+    </div>
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="moscowmule.jpg" alt="Moscow Mule">
+            <div class="drink-info">
+                <h3>Moscow Mule</h3>
+				<p>A popular cocktail made with vodka, ginger beer, and lime juice, served in a copper mug.</p>
+               <p><h2>Php.170</h2></p>
+            </div>
+        </div>
+    </div>
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="martini.jpg" alt="Martini">
+            <div class="drink-info">
+                <h3>Martini</h3>
+				<p>James Bond was wrong—whether you drink it with gin or vodka, stirred is the way to go when ordering a martini.</p>
+               <p><h2>Php.100</h2></p>
+            </div>
+        </div>
+    </div>
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="spritz.webp" alt="Spritz">
+            <div class="drink-info">
+                <h3>Spritz</h3>
+				<p>Low on alcohol and high on refreshment, the spritz has been a crowd-pleasing favorite aperitivo for more than two centuries</p>
+                 <p><h2>Php.200</h2></p>
+            </div>
+        </div>
+    </div>
+    <div class="drink-box">
+        <div class="drink-content">
+            <img src="whiskysour.webp" alt="Whisky Sour">
+            <div class="drink-info">
+                <h3>Whisky Sour</h3>
+				<p>Perhaps the most refreshing whiskey cocktail, this is an old reliable favorite.</p>
+               <p><h2>Php.155</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="mojito.jpg" alt="Mojito">
+            <div class="drink-info">
+                <h3>Mojito</h3>
+				<p>Originating in Cuba, this refreshing rum-based drink is filled with mint and lime—a perfect combination for sipping by the pool or beach.</p>
+                <p><h2>Php.165</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="manhattan.jpg" alt="Manhattan">
+            <div class="drink-info">
+                <h3>Manhattan</h3>
+				<p>Created sometime in the mid-1800s, the Manhattan is one of the booziest classic drink recipes.</p>
+             <p><h2>Php.125</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="pimmscup.jpg" alt="Pimm's Cup">
+            <div class="drink-info">
+                <h3>Pimm's Cup</h3>
+				<p>It's blend of mid-proof spirit with lemon, ginger and fruit is as revitalizing as cocktails can be. And its charms are especially effective on a hot day.</p>
+                 <p><h2>Php.150</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="sazerac.jpg" alt="Sazerac">
+            <div class="drink-info">
+                <h3>Sazerac</h3>
+				<p>If you like a drink with some bite, give this classic New Orleans concoction a try.</p>
+                <p><h2>Php.130</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="aviation.jpg" alt="Aviation">
+            <div class="drink-info">
+                <h3>Aviation</h3>
+				<p>This old school favorite with its unique floral notes almost disappeared for the early '00s cocktail renaissance brought it roaring back to popularity.</p>
+            <p><h2>Php.110</h2></p>
+            </div>
+        </div>
+    </div>
+	<div class="drink-box">
+        <div class="drink-content">
+            <img src="gimlet.webp" alt="Gimlet">
+            <div class="drink-info">
+                <h3>Gimlet</h3>
+				<p>The classic recipe calls for gin, but this drink is just as tasty if you substitute vodka instead.</p>
+                 <p><h2>Php.160</h2></p>
+            </div>
+        </div>
+    </div>
+</main>
+<div class="cashier">
+        <center><h2>Virtual Cashier</h2></center>
+        <div class="item">
+            <label for="price1">Price of Cosmopolitan:</label>
+            <input type="number" id="price1" value="150">
+			<label for="quantity1">Quantity:</label>
+            <input type="number" id="quantity1" value="0">
+        </div>
+        <div class="item">
+            <label for="price2">Price of Negrino:</label>
+            <input type="number" id="price2" value="125">
+			<label for="quantity2">Quantity:</label>
+            <input type="number" id="quantity2" value="0">
+        </div>
+        <!-- Add 10 more items -->
+        <div class="item">
+            <label for="price3">Price of Moscow Mule:</label>
+            <input type="number" id="price3" value="170">
+			<label for="quantity3">Quantity:</label>
+            <input type="number" id="quantity3" value="0">
+        </div>
+        <div class="item">
+            <label for="price4">Price of Martini:</label>
+            <input type="number" id="price4" value="100">
+			<label for="quantity4">Quantity:</label>
+            <input type="number" id="quantity4" value="0">
+        </div>
+        <div class="item">
+            <label for="price5">Price of Spritz:</label>
+            <input type="number" id="price5" value="220">
+			<label for="quantity5">Quantity:</label>
+            <input type="number" id="quantity5" value="0">
+        </div>
+        <div class="item">
+            <label for="price6">Price of Whisky Sour:</label>
+            <input type="number" id="price6" value="155">
+			<label for="quantity6">Quantity:</label>
+            <input type="number" id="quantity6" value="0">
+        </div>
+        <div class="item">
+            <label for="price7">Price of Mojito:</label>
+            <input type="number" id="price7" value="165">
+			<label for="quantity7">Quantity:</label>
+            <input type="number" id="quantity7" value="0">
+        </div>
+        <div class="item">
+            <label for="price8">Price of Manhattan:</label>
+            <input type="number" id="price8" value="125">
+			<label for="quantity8">Quantity:</label>
+            <input type="number" id="quantity8" value="0">
+        </div>
+        <div class="item">
+            <label for="price9">Price of Pimm's Cup:</label>
+            <input type="number" id="price9" value="150">
+			<label for="quantity19">Quantity:</label>
+            <input type="number" id="quantity9" value="0">
+        </div>
+        <div class="item">
+            <label for="price10">Price of Sazerac:</label>
+            <input type="number" id="price10" value = "130">
+			<label for="quantity10">Quantity:</label>
+            <input type="number" id="quantity10" value="0">
+        </div>
+		<div class="item">
+            <label for="price11">Price of Aviation:</label>
+            <input type="number" id="price11" value = "110">
+			<label for="quantity11">Quantity:</label>
+            <input type="number" id="quantity11" value="0">
+        </div>
+		<div class="item">
+            <label for="price12">Price of Gimlet:</label>
+            <input type="number" id="price12"  value = "160">
+			<label for="quantity12">Quantity:</label>
+            <input type="number" id="quantity12" value="0">
+        </div>
+        <!-- End of additional items -->
+        <div class="item">
+            <label for="total">Total:</label>
+            <input type="text" id="total" disabled>
+        </div>
+       <center> <button onclick="calculateTotal()">Calculate Total</button></center>
+    </div>
+
+    <script>
+        // Function to calculate total
+        function calculateTotal() {
+            var total = 0;
+            // Loop through input fields and sum up the values
+            for (var i = 1; i <= 12; i++) {
+                var price = parseFloat(document.getElementById("price" + i).value);
+                var quantity = parseInt(document.getElementById("quantity" + i).value);
+                total += price * quantity;
+            }
+            
+            document.getElementById("total").value = total.toFixed(2);
+        }
+    </script>
+
+	
+		<footer>
+        <p>Welcome to Jay's Bar. Thank you for visiting! Enjoy Your Day!</p>
+        <p>&copy; Program and Developed By: Dee Jay B. Cabiles</p>
+         </footer>
+    
+</body>
+
+</html>

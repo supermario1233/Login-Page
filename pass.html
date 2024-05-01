@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Log in Page</title>
+<link rel="icon" href="logoo.png">
+<style>
+  
+  body{
+  background-image: url('back.jpg');
+  opacity: 1.0;
+  }
+  
+  body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+  }
+  h2{
+    font-family: arial;
+  }
+  form {
+    width: 30%;
+	height: 30%;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #05a3a8;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input {
+    width:100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+  }
+  input[type="submit"]{
+    background-color: #e1f7f7;
+    color: black;
+    cursor: pointer;
+  }
+</style>
+<script>
+    function validatepass() {
+      var username = document.getElementById("username").value;
+      var password = document.getElementById("password").value;
+
+     
+      if (username === "Dee Jay"&& password === "Cabiles") {
+        window.location.href = "Home.html";
+      } else {
+        alert("Invalid username or password. Please try again.");
+      }
+    }
+</script>
+</head>
+<body>
+
+
+<form onsubmit="event.preventDefault(); validatepass()">
+<label for="username">Username:</label>
+<input type="text" id="username" name="username" required><br>
+
+<label for="password">Password:</label>
+<input type="password" id="password" name="password" required><br>
+
+<input type="submit" value="Login">
+</form>
+
+</body>
+</html>
